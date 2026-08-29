@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Gabriel Nuila — Diseñador Gráfico</title>
+  <meta name="description" data-i18n-attr="content:meta.description"
+    content="Portafolio de Gabriel Nuila, diseñador gráfico hondureño. Comunicación visual, branding, cartelismo, motion graphics y diseño digital.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header>
+    <nav id="nav" class="nav" aria-label="Navegación principal">
+      <a href="#hero" class="nav-brand"><img src="./img/logo-nuila.svg" alt="Logotipo Gabriel Nuila"></a>
+
+      <button class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#proyectos" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#sobre" class="nav-link" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <main>
+    <section id="hero" class="hero">
+
+      <div class="hero-content">
+        <h1 class="hero-name" aria-label="Gabriel Nuila">
+          <span class="hero-name-line">GABRIEL</span>
+          <span class="hero-name-line">NUILA</span>
+        </h1>
+
+        <p class="hero-tagline" data-i18n="hero.tagline">Diseñador gráfico especializado en cartelismo, branding y diseño editorial.</p>
+
+        <ul class="hero-disciplines" aria-label="Áreas de trabajo">
+          <li data-i18n="hero.disc1">Publicidad</li>
+          <li data-i18n="hero.disc2">Motion Graphics</li>
+          <li data-i18n="hero.disc3">Identidad Visual</li>
+          <li data-i18n="hero.disc4">Diseño Web</li>
+          <li data-i18n="hero.disc5">Packaging</li>
+        </ul>
+
+
+        <a href="#proyectos" class="hero-cta">
+          <span data-i18n="hero.cta">Ver proyectos</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-graphic" aria-hidden="true">
+        <div class="hero-grid"></div>
+
+        <div class="hero-lines">
+          <!-- Verticales (Eje X en múltiplos de 60px) -->
+          <span class="line line-v red" style="--h: 360px; --top: 60px; --right: 120px; --delay: 0s;"></span>
+          <span class="line line-v yellow" style="--h: 280px; --top: 180px; --right: 300px; --delay: 1.6s;"></span>
+          <span class="line line-v red" style="--h: 200px; --top: 420px; --right: 420px; --delay: 3.2s;"></span>
+
+          <!-- Horizontales (Ahora también alineadas con --top y --right en múltiplos de 60px) -->
+          <span class="line line-h yellow" style="--w: 300px; --top: 120px; --right: 0px; --delay: 0.8s;"></span>
+          <span class="line line-h red" style="--w: 240px; --top: 360px; --right: 240px; --delay: 2.4s;"></span>
+          <span class="line line-h yellow" style="--w: 180px; --top: 600px; --right: 300px; --delay: 4.0s;"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROYECTOS ==================== -->
+    <section id="proyectos" class="projects">
+
+      <header class="projects-header">
+        <span class="section-label reveal" data-i18n="projects.label">— Casos de estudio</span>
+        <h2 class="projects-title reveal reveal-delay-1" data-i18n="projects.title">Proyectos</h2>
+      </header>
+
+      <!-- ========== PROJECT 01 ========== -->
+      <article class="project" data-project="01">
+
+        <div class="project-cover js-toggle" role="button" tabindex="0" aria-expanded="false">
+
+          <div class="project-cover-grid">
+
+
+            <div class="project-img-wrap project-img-wrap--portrait">
+              <img src="./img/la-cuenta-de-la-ducha.webp" alt="La cuenta de la ducha Gabriel Nuila" class="project-img"
+                loading="lazy">
+            </div>
+
+
+            <div class="project-meta">
+              <div class="project-number">01</div>
+              <div class="project-info">
+                <h3 class="project-name main" data-i18n="p1.title">La cuenta de la ducha</h3>
+                <span class="destacado" data-i18n="p1.badge">Finalista TISDC 2026</span>
+                <p class="project-desc" data-i18n="p1.desc">Cartel con temática de restauración del planeta, participante en la 19na Bienal del Cartel de México y finalista de la categoría Visual Design en Taiwan International Student Design Competition 2026.</p>
+                <ul class="project-tags" role="list">
+                  <li data-i18n="p1.tag1">Cartelismo</li>
+                  <li data-i18n="p1.tag2">Conceptualización</li>
+                  <li data-i18n="p1.tag3">Comunicación Visual</li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="project-bar">
+            <span class="bar-label" data-i18n="common.viewCase">Ver caso de estudio</span>
+            <span class="bar-icon" aria-hidden="true">+</span>
+          </div>
+
+        </div><!-- /project-cover -->
+
+        <!-- CASE STUDY 01 -->
+        <div class="case-study js-case" aria-hidden="true">
+          <div class="case-inner">
+
+            <div class="case-full">
+              <img src="./img/cuantausas-case1-hero.svg" alt="¿Cuánta usás? - Mensaje principal la cuenta de la ducha"
+                class="case-hero-img" loading="lazy">
+            </div>
+
+            <div class="case-cols">
+              <div class="case-block">
+                <h4 class="case-step"><em>01</em> <span data-i18n="case.step1">El reto</span></h4>
+                <p class="case-text" data-i18n="p1.s1">El proyecto surgió a partir de la convocatoria de la Bienal Internacional del Cartel en México, que invitaba a comunicar acciones cotidianas capaces de promover hábitos y formas de vida sostenibles. El reto era transformar una situación cotidiana en un mensaje visual claro que generara reflexión y cambio de actitud.</p>
+              </div>
+              <div class="case-block">
+                <h4 class="case-step"><em>02</em> <span data-i18n="case.step2">El concepto</span></h4>
+                <p class="case-text" data-i18n="p1.s2">El cartel utiliza una metáfora visual en la que las marcas de conteo representan el agua utilizada durante una ducha. El proyecto busca generar conciencia sobre el consumo de agua en una acción cotidiana que suele pasar desapercibida, haciendo visible aquello que normalmente no contabilizamos.</p>
+              </div>
+            </div>
+
+            <div class="case-section">
+              <h4 class="case-step"><em>03</em> <span data-i18n="p1.s3Title">Investigación y moodboard</span></h4>
+              <p class="case-text case-text--narrow" data-i18n="p1.s3">Investigué datos sobre el consumo de agua durante las duchas para determinar la magnitud que debía comunicar mediante las marcas de conteo. A partir de ello, exploré un lenguaje visual geométrico que aportara fuerza y peso al mensaje, además de diferentes formas de representar gráficamente una ducha para maximizar su legibilidad.</p>
+              <div class="case-grid-3">
+                <img src="./img/referencia1-case1.webp" alt="Marcas de conteo en una pizarra" class="case-img"
+                  loading="lazy">
+                <img src="./img/referencia2-case1.jpg" alt="Diseño gráfico con estilo geométrico" class="case-img"
+                  loading="lazy">
+                <img src="./img/referencia3-case1.jpg" alt="Pictograma de una ducha" class="case-img" loading="lazy">
+              </div>
+            </div>
+
+            <div class="case-section">
+              <h4 class="case-step"><em>04</em> <span data-i18n="case.step4">Proceso y diseño</span></h4>
+              <p class="case-text case-text--narrow" data-i18n="p1.s4">Durante el proceso exploré distintas formas de hacer que el lenguaje gráfico tuviera mayor presencia y que el mensaje adquiriera cada vez más peso visual. Fui simplificando y reforzando los elementos hasta encontrar una composición donde la metáfora y el mensaje fueran los protagonistas.</p>
+              <div class="case-grid-2">
+                <img src="./img/proceso1-case1.png" alt="Proceso la cuenta de la ducha" class="case-img" loading="lazy">
+                <img src="./img/proceso2_case1-.webp" alt="Proceso final la cuenta de la ducha" class="case-img"
+                  loading="lazy">
+              </div>
+            </div>
+
+            <div class="case-section">
+              <h4 class="case-step"><em>05</em> <span data-i18n="case.step5">Resultado</span></h4>
+              <div class="case-grid-2">
+                <img src="./img/resultado1-case1.jpg" alt="Mockup la cuenta de la ducha" class="case-img"
+                  loading="lazy">
+                <img src="./img/resultado2-case1.webp" alt="Aplicación la cuenta de la ducha" class="case-img"
+                  loading="lazy">
+              </div>
+            </div>
+
+            <div class="case-reflection">
+              <h4 class="case-step case-step--light"><em>06</em> <span data-i18n="case.step6">Lo que aprendí</span></h4>
+              <p class="case-text" data-i18n="p1.s6">Aprendí a confiar más en el lenguaje gráfico para transmitir mensajes sin depender del texto y a distinguir mejor cuándo es necesario replantear la ejecución y cuándo el concepto sigue siendo sólido. A lo largo del proceso exploré distintas versiones sin perder de vista la idea central. Si pudiera desarrollar nuevamente el proyecto, trabajaría en hacer la representación de la ducha aún más legible. También valoro especialmente el reconocimiento internacional que recibió el cartel al ser seleccionado como finalista en el TISDC 2026.</p>
+            </div>
+
+            <div class="case-close-wrapper">
+              <button type="button" class="btn-close-case js-close-case" data-i18n="common.closeCase">
+                Cerrar caso de estudio ↑
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- ========== PROJECT 02 ========== -->
+      <article class="project project--02" data-project="02">
+
+        <div class="project-cover js-toggle" role="button" tabindex="0" aria-expanded="false">
+
+          <div class="project-cover-grid project-cover-grid--02">
+
+            <div class="project-meta project-meta--right">
+              <div class="project-number">02</div>
+              <div class="project-info">
+                <h3 class="project-name" data-i18n="p2.title">Revista AHHHH - Caso Enfield</h3>
+                <p class="project-desc" data-i18n="p2.desc">Proyecto editorial de temática de terror, desarrollado a partir de la investigación sobre un caso paranormal famoso y una propuesta visual inspirada en fotografías antiguas, collage y materiales desgastados.</p>
+                <ul class="project-tags" role="list">
+                  <li data-i18n="p2.tag1">Diseño Editorial</li>
+                  <li data-i18n="p2.tag2">Curación de contenidos</li>
+                  <li data-i18n="p2.tag3">Tratamiento fotográfico</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-img-wrap project-img-wrap--letter">
+              <img src="./img/revista-ahhhh-portada.webp" alt="Revista AHHHH Gabriel Nuila" class="project-img"
+                loading="lazy">
+            </div>
+
+          </div>
+
+          <div class="project-bar">
+            <span class="bar-label" data-i18n="common.viewCase">Ver caso de estudio</span>
+            <span class="bar-icon" aria-hidden="true">+</span>
+          </div>
+
+        </div><!-- /project-cover -->
+
+        <!-- CASE STUDY 02 -->
+        <div class="case-study js-case" aria-hidden="true">
+          <div class="case-inner">
+
+            <div class="case-full">
+              <img src="./img/enfield-case2-hero.svg" alt="Plano detalle fotografía de la revista AHHHH"
+                class="case-hero-img" loading="lazy">
+            </div>
+
+            <div class="case-cols">
+              <div class="case-block">
+                <h4 class="case-step"><em>01</em> <span data-i18n="case.step1">El reto</span></h4>
+                <p class="case-text" data-i18n="p2.s1">El reto consistió en desarrollar una revista desde cero, definiendo su tema, estilo visual y estructura editorial, además de investigar, recopilar y organizar contenido real para crear una publicación coherente y atractiva para impresión.</p>
+              </div>
+              <div class="case-block">
+                <h4 class="case-step"><em>02</em> <span data-i18n="case.step2">El concepto</span></h4>
+                <p class="case-text" data-i18n="p2.s2">La revista busca evocar la sensación de encontrar fotografías antiguas en un álbum: rotas, desgastadas y pertenecientes a un mundo que ya no existe. La diagramación da protagonismo a este lenguaje visual, mientras que los demás gráficos como texturas y títulos refuerzan la inmersión en la temática de horror sin sacrificar la legibilidad.</p>
+              </div>
+            </div>
+
+            <div class="case-section">
+              <h4 class="case-step"><em>03</em> <span data-i18n="p1.s3Title">Investigación y moodboard</span></h4>
+              <p class="case-text case-text--narrow" data-i18n="p2.s3">Cuando decidí el tema de terror, empecé a investigar distintos casos y el de Enfield tenía esa sensación de anécdota familiar. Eso inmediatamente me hizo pensar en cómo representarlo con fotografías, lo que me llevó a explorar un estilo roto y desgastado. También buscaba que la revista se sintiera oscura desde el primer vistazo y tuviera un contraste fuerte entre sus páginas, así que concentré mi investigación y referencias en ese lenguaje visual.</p>
+              <div class="case-grid-3">
+                <img src="./img/referencia1-case2.jpg" alt="Revista de terror" class="case-img" loading="lazy">
+                <img src="./img/referencia2-case2.jpg" alt="Estilo roto para tratamiento fotográfico" class="case-img"
+                  loading="lazy">
+                <img src="./img/referencia3-case2.jpg" alt="Referencia de estilo revista" class="case-img"
+                  loading="lazy">
+              </div>
+            </div>
+
+            <div class="case-section">
+              <h4 class="case-step"><em>04</em> <span data-i18n="case.step4">Proceso y diseño</span></h4>
+              <p class="case-text case-text--narrow" data-i18n="p2.s4">Primero realicé un dummy para definir la composición de cada página y establecer desde el inicio el protagonismo de las imágenes. Luego, al pasar al formato digital, desarrollé un tratamiento fotográfico y estilo visual consistente para mantener la misma línea visual en toda la revista sin tanto esfuerzo y así optimizar el proceso de diseño acorde a la fecha de entrega.</p>
+              <div class="case-grid-2">
+                <img src="./img/proceso1-case2.webp" alt="Proceso — Proyecto 02" class="case-img" loading="lazy">
+                <img src="./img/proceso2-case2.webp" alt="Desarrollo — Proyecto 02" class="case-img" loading="lazy">
+              </div>
+            </div>
+
+            <div class="case-section">
+              <h4 class="case-step"><em>05</em> <span data-i18n="case.step5">Resultado</span></h4>
+              <div class="case-grid-2">
+                <img src="./img/resultado1-case2.jpg" alt="Proceso — Proyecto 02" class="case-img" loading="lazy">
+                <img src="./img/resultado2-case2.jpg" alt="Desarrollo — Proyecto 02" class="case-img" loading="lazy">
+              </div>
+            </div>
+
+            <div class="case-reflection">
+              <h4 class="case-step case-step--light"><em>06</em> <span data-i18n="case.step6">Lo que aprendí</span></h4>
+              <p class="case-text" data-i18n="p2.s6">Aprendí la importancia de la eficiencia y la organización al trabajar proyectos gráficos extensos con una misma línea visual. También salí de mi zona de confort al experimentar con un tratamiento fotográfico más elaborado. Si pudiera repetir el proyecto, exploraría formas más creativas de trabajar los títulos, aunque considero que mantenerlos contenidos ayudó a no distraer de la lectura y de las imágenes.</p>
+            </div>
+            
+            <div class="case-close-wrapper">
+              <button type="button" class="btn-close-case js-close-case" data-i18n="common.closeCase">
+                Cerrar caso de estudio ↑
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+
+      </article>
+
+      <!-- ========== PROJECT 03 ========== -->
+      <article class="project project--03" data-project="03">
+
+        <div class="project-cover js-toggle project-cover--dark" role="button" tabindex="0" aria-expanded="false">
+
+          <div class="project-cover-grid project-cover-grid--03">
+
+            <div class="project-img-wrap project-img-wrap--wide">
+              <img src="./img/manual-conchita-portada.webp" alt="Manual de marca Sala de Belleza Conchita Gabriel Nuila"
+                class="project-img" loading="lazy">
+              <div class="project-img-overlay" aria-hidden="true"></div>
+            </div>
+
+            <div class="project-meta project-meta--over">
+              <div class="project-number project-number--over">03</div>
+              <div class="project-info">
+                <h3 class="project-name project-name--over" data-i18n="p3.title">Manual de marca<br>Sala de Belleza Conchita</h3>
+                <p class="project-desc project-desc--over" data-i18n="p3.desc">Manual de marca para el rebranding de Sala de Belleza Conchita, desarrollado para definir su nueva identidad visual, establecer criterios de uso y presentar sus principales aplicaciones de marca.</p>
+                <ul class="project-tags project-tags--over" role="list">
+                  <li data-i18n="p3.tag1">Identidad Visual</li>
+                  <li data-i18n="p3.tag2">Branding</li>
+                  <li data-i18n="p3.tag3">Diseño Editorial</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="project-bar">
+            <span class="bar-label" data-i18n="common.viewCase">Ver caso de estudio</span>
+            <span class="bar-icon" aria-hidden="true">+</span>
+          </div>
+
+        </div><!-- /project-cover -->
+
+        <!-- CASE STUDY 03 -->
+        <div class="case-study js-case" aria-hidden="true">
+          <div class="case-inner">
+
+            <div class="case-full">
+              <img src="./img/conchita-case3-hero.svg" alt="Concha de mar utilizada en la marca" class="case-hero-img"
+                loading="lazy">
+            </div>
+
+            <div class="case-cols">
+              <div class="case-block">
+                <h4 class="case-step"><em>01</em> <span data-i18n="case.step1">El reto</span></h4>
+                <p class="case-text" data-i18n="p3.s1">Sala de Belleza Conchita necesitaba renovar su identidad visual para conectar con un público más joven sin perder el prestigio y reconocimiento construido con su clientela actual. El reto consistía en crear un sistema visual moderno, coherente y versátil, capaz de representar la esencia de la marca y adaptarse tanto a medios físicos como digitales.</p>
+              </div>
+              <div class="case-block">
+                <h4 class="case-step"><em>02</em> <span data-i18n="case.step2">El concepto</span></h4>
+                <p class="case-text" data-i18n="p3.s2">La concha de mar del logo representa la idea de construir y fortalecer la belleza a lo largo del tiempo. Este concepto se complementa con formas orgánicas inspiradas en el cabello, que adquieren protagonismo dentro de la composición para crear una identidad capaz de conectar con públicos más jóvenes sin perder la elegancia y el prestigio de la marca.</p>
+              </div>
+            </div>
+
+            <div class="case-section">
+              <h4 class="case-step"><em>03</em> <span data-i18n="p1.s3Title">Investigación y moodboard</span></h4>
+              <p class="case-text case-text--narrow" data-i18n="p3.s3">La principal inspiración para el proyecto fueron las conchas de mar, especialmente sus formas orgánicas, curvas y elegantes. A partir de esta referencia, exploré recursos visuales relacionados con el cabello, la belleza y los diferentes servicios del salón, buscando integrar estos elementos en una identidad contemporánea que mantuviera la elegancia y el carácter de la marca.</p>
+              <div class="case-grid-3">
+                <img src="./img/referencia1-case3.jpg" alt="Concha de mar" class="case-img" loading="lazy">
+                <img src="./img/referencia2-case3.jpg" alt="Referencia de tarjetas de presentación" class="case-img"
+                  loading="lazy">
+                <img src="./img/referencia3-case3.jpg" alt="Referencia de colores para Sala de Belleza Conchita"
+                  class="case-img" loading="lazy">
+              </div>
+            </div>
+
+            <div class="case-section">
+              <h4 class="case-step"><em>04</em> <span data-i18n="case.step4">Proceso y diseño</span></h4>
+              <p class="case-text case-text--narrow" data-i18n="p3.s4">Lo primero que resolví fue cómo representar e integrar la concha de mar en el logo de manera que tuviera protagonismo sin comprometer la legibilidad. Luego trabajé en encontrar el equilibrio entre una tipografía juvenil, capaz de conectar con nuevos públicos, y una estética que conservara el atractivo para la clientela actual de Sala de Belleza Conchita. Durante el proceso presté especial atención a los detalles del logotipo, integrando sus elementos mediante ligaduras para lograr una unidad visual que evocara una escritura cursiva hecha a mano.</p>
+              <div class="case-grid-2">
+                <img src="./img/proceso1-case3.webp" alt="Bocetos a mano Sala de Belleza Conchita" class="case-img"
+                  loading="lazy">
+                <img src="./img/proceso2-case3.png" alt="Bocetos digitales Sala de Belleza Conchita" class="case-img"
+                  loading="lazy">
+              </div>
+            </div>
+
+            <div class="case-section">
+              <h4 class="case-step"><em>05</em> <span data-i18n="case.step5">Resultado</span></h4>
+              <div class="case-grid-2">
+                <img src="./img/resultado1-case3.png" alt="Logo y variaciones Sala de Belleza Conchita" class="case-img"
+                  loading="lazy">
+                <img src="./img/resultado2-case3.webp"
+                  alt="Tarjeta de presentación y papelería Sala de Belleza Conchita" class="case-img" loading="lazy">
+              </div>
+            </div>
+
+            <div class="case-reflection">
+              <h4 class="case-step case-step--light"><em>06</em> <span data-i18n="case.step6">Lo que aprendí</span></h4>
+              <p class="case-text" data-i18n="p3.s6">Aprendí la importancia de mantener una línea gráfica coherente y de trabajar con organización y eficiencia en el desarrollo de una identidad. También aprendí a valorar la iteración, tanto al bocetar logotipos como al construirlos digitalmente, y a aprovechar cada medio en el que vive la marca como una oportunidad para comunicar. Si desarrollara nuevamente el proyecto, exploraría más formas de extender la línea gráfica sin perder la identidad de la marca.</p>
+            </div>
+
+            <div class="case-close-wrapper">
+              <button type="button" class="btn-close-case js-close-case" data-i18n="common.closeCase">
+                Cerrar caso de estudio ↑
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </article>
+
+    </section><!-- /projects -->
+
+    <!-- ==================== SOBRE MÍ ==================== -->
+    <section id="sobre" class="about">
+
+      <div class="about-inner">
+
+        <div class="about-photo-col">
+          <div class="about-photo-frame">
+            <img src="./img/foto-sobremi.webp" alt="Foto Gabriel Nuila" class="about-photo">
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <span class="section-label reveal" data-i18n="about.label">— Sobre Mí</span>
+
+          <h2 class="about-title reveal reveal-delay-1" data-i18n="about.title">Diseño que comunica y perdura.</h2>
+
+          <div class="about-body reveal reveal-delay-2">
+            <p data-i18n="about.p1">Soy Gabriel Nuila, diseñador gráfico hondureño en la etapa final de mi formación universitaria. Me interesa el diseño como herramienta de comunicación: una forma, un color o una tipografía pueden cargarse de significado y generar una reacción en las personas. Disfruto trabajar con clientes para encontrar soluciones visuales que respondan a sus necesidades, pero también me interesa explorar el potencial de la comunicación visual para generar conciencia y contribuir a un mundo mejor.</p>
+
+            <p data-i18n="about.p2">Busco constantemente nuevas formas de comunicar mediante el lenguaje gráfico, sin dejar de explorar recursos, técnicas y referencias del pasado que puedan encontrar nuevas posibilidades en el presente. Me interesa incorporar herramientas y medios digitales a mi práctica para aprovechar la intersección entre comunicación visual, tecnología, cultura y soluciones sostenibles, tanto para resolver problemas concretos como para desarrollar proyectos que aporten a causas sociales.</p>
+          </div>
+
+          <div class="about-focus reveal reveal-delay-3">
+            <h3 class="focus-label" data-i18n="about.skillsTitle">Habilidades</h3>
+            <ul class="focus-list focus-list--2-cols" role="list">
+              <li data-i18n="about.sk1">Trabajo en equipo</li>
+              <li data-i18n="about.sk2">Manejo de Adobe Creative Cloud</li>
+              <li data-i18n="about.sk3">Adaptabilidad</li>
+              <li data-i18n="about.sk4">Atención al detalle</li>
+              <li data-i18n="about.sk5">Resolución de problemas</li>
+              <li data-i18n="about.sk6">Gestión del tiempo</li>
+            </ul>
+          </div>
+
+          <div class="about-focus reveal reveal-delay-3">
+            <h3 class="focus-label" data-i18n="about.awardsTitle">Reconocimientos</h3>
+            <ul class="focus-list focus-list--1-col" role="list">
+              <li data-i18n="about.aw1">Finalista - Taiwan International Student Design Competition 2026</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto" class="contact">
+
+      <div class="contact-inner">
+
+        <h2 class="contact-headline reveal" data-i18n="contact.title">
+          Trabajemos<br><span class="contact-red">juntos.</span>
+        </h2>
+
+        <div class="contact-links reveal reveal-delay-2">
+
+          <a href="mailto:gnuila7@icloud.com" class="contact-email">
+            gnuila7@icloud.com
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="footer-copy">2026 Gabriel Nuila</span>
+    <span class="footer-made" data-i18n="footer.made">Diseñado y desarrollado por Gabriel Nuila</span>
+  </footer>
+
+
+  <script src="./js/translations.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
