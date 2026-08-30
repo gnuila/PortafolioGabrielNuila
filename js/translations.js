@@ -108,7 +108,7 @@ const translations = {
       aw1: "Finalist — Taiwan International Student Design Competition 2026"
     },
     contact: {
-      title: 'Let//s work<br><span class="contact-red">together.</span>'
+      title: `Let's work<br><span class="contact-red">together.</span>`
     },
     footer: {
       made: "Designed and developed by Gabriel Nuila"
