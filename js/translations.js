@@ -71,6 +71,27 @@ const translations = {
       s4: "The first challenge I addressed was how to represent and integrate the seashell into the logo so that it had a strong presence without compromising legibility. I then worked to find a balance between a youthful typeface capable of connecting with new audiences and an aesthetic that would remain appealing to the salon's existing clientele. Throughout the process, I paid close attention to the details of the logotype, integrating its elements through ligatures to create a unified visual identity reminiscent of handwritten cursive.",
       s6: "I learned the importance of maintaining a consistent visual language and working with organization and efficiency when developing an identity system. I also learned to value iteration, both when sketching logos and when building them digitally, and to take advantage of every medium in which a brand appears as an opportunity to communicate. If I were to develop the project again, I would explore more ways to extend the visual language across different applications without losing the brand's identity."
     },
+    moreProjects: {
+      label: "— Gallery",
+      title: "Other Projects",
+      hint: "View in fullscreen",
+      hintVideo: "Play video",
+      p1: {
+        tag: "Poster",
+        title: "Educational Equity",
+        desc: "Conceptual poster submitted to the 19th BICM about equitable access to education."
+      },
+      p2: {
+        tag: "Packaging",
+        title: "Mongo Wings",
+        desc: "A set of distinctive packaging designed to attract their target audience."
+      },
+      p3: {
+        tag: "Motion Graphics",
+        title: "Ruido Blanco",
+        desc: "College project about an animated lyric video project for the song Prófugos."
+      }
+    },
     about: {
       label: "— About Me",
       title: "Design that communicates<br>and endures.",
@@ -87,7 +108,7 @@ const translations = {
       aw1: "Finalist — Taiwan International Student Design Competition 2026"
     },
     contact: {
-      title: 'Let’s work<br><span class="contact-red">together.</span>'
+      title: 'Let//s work<br><span class="contact-red">together.</span>'
     },
     footer: {
       made: "Designed and developed by Gabriel Nuila"
