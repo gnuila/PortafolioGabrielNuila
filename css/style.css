@@ -1,4 +1,4 @@
-/* --- Variables --- */
+/* Variables */
 :root {
   --black: #050505;
   --white: #f4f2ee;
@@ -18,7 +18,7 @@
   --ease-std: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --- Reset --- */
+/* Reset */
 *,
 *::before,
 *::after {
@@ -83,7 +83,7 @@ button {
   background: var(--gray-2);
 }
 
-/* --- Scroll --- */
+/* Scroll */
 
 .reveal {
   opacity: 0;
@@ -101,7 +101,7 @@ button {
 .reveal-delay-2 { transition-delay: 0.22s; }
 .reveal-delay-3 { transition-delay: 0.34s; }
 
-/* --- Header --- */
+/* Header */
 
 .nav {
   position: fixed;
@@ -156,14 +156,6 @@ button {
   transition: width 0.3s var(--ease-out);
 }
 
-.nav-link:hover {
-  color: var(--white);
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
 .nav-hamburger {
   display: none;
   flex-direction: column;
@@ -195,7 +187,6 @@ button {
   padding: 0;
 }
 
-.lang-btn:hover,
 .lang-btn.active {
   color: var(--white);
 }
@@ -205,7 +196,7 @@ button {
   user-select: none;
 }
 
-/* --- Hero --- */
+/* Hero */
 
 .hero {
   min-height: 100vh;
@@ -286,13 +277,6 @@ button {
   will-change: transform;
 }
 
-.hero-cta:hover {
-  background: #c8180e;
-}
-
-.hero-cta:hover svg {
-  transform: translateX(6px);
-}
 
 .hero-graphic {
   position: relative;
@@ -367,7 +351,7 @@ button {
   100% { transform: scaleX(1); opacity: 0; }
 }
 
-/* --- Proyectos --- */
+/* Proyectos */
 
 .projects-header {
   padding: clamp(2rem, 4vw, 4rem) clamp(1.5rem, 4vw, 3rem);
@@ -407,9 +391,6 @@ button {
   transition: background 0.4s var(--ease-std);
 }
 
-.project-cover:hover {
-  background: rgba(255, 255, 255, 0.018);
-}
 
 .project-cover:focus-visible {
   outline: 2px solid var(--yellow);
@@ -445,16 +426,9 @@ button {
   transition: -webkit-text-stroke 0.35s var(--ease-out), color 0.35s var(--ease-out);
 }
 
-.project-cover:hover .project-number:not(.project-number--over) {
-  -webkit-text-stroke: 1px var(--yellow);
-}
 
 .project-number--over {
   -webkit-text-stroke: 1px #cfcfcf;
-}
-
-.project-cover:hover .project-number--over {
-  -webkit-text-stroke: 1px var(--white);
 }
 
 .project-name {
@@ -507,19 +481,9 @@ button {
   transition: border-color 0.25s, color 0.25s;
 }
 
-.project-cover:hover .project-tags li {
-  border-color: rgba(248, 186, 18, 0.4);
-  color: var(--yellow);
-}
-
 .project-tags--over li {
   border-color: rgba(255, 255, 255, 0.2);
   color: rgba(232, 228, 221, 0.55);
-}
-
-.project-cover:hover .project-tags--over li {
-  border-color: rgba(255, 255, 255, 0.4);
-  color: var(--white);
 }
 
 .project-img-wrap {
@@ -541,21 +505,12 @@ button {
   will-change: transform, filter;
 }
 
-.project-cover:hover .project-img {
-  transform: scale(1.01);
-  filter: brightness(1);
-}
-
 .project-img-overlay {
   position: absolute;
   inset: 0;
   background: rgba(8, 8, 8, 0.4);
   z-index: 1;
   transition: background 0.4s var(--ease-std);
-}
-
-.project-cover:hover .project-img-overlay {
-  background: rgba(8, 8, 8, 0.35);
 }
 
 .project-meta--over {
@@ -590,10 +545,6 @@ button {
   transition: color 0.25s;
 }
 
-.project-cover:hover .bar-label {
-  color: var(--yellow);
-}
-
 .bar-icon {
   font-size: 2rem;
   font-weight: 300;
@@ -608,7 +559,7 @@ button {
   color: var(--red);
 }
 
-/* --- Casos --- */
+/* Casos */
 
 .js-case {
   height: 0;
@@ -736,12 +687,7 @@ button {
   transition: transform 0.2s var(--ease-out), color 0.2s;
 }
 
-.btn-close-case:hover {
-  transform: translateY(-2px);
-  color: var(--yellow);
-}
-
-/* --- Otros proyectos --- */
+/* Otros proyectos */
 
 .more-projects-header {
   border-top: 1px solid var(--gray-2);
@@ -776,11 +722,6 @@ button {
   max-height: 80vh;
 }
 
-.gallery-card:hover {
-  border-color: rgba(248, 186, 18, 0.4);
-  transform: translateY(-4px);
-}
-
 .gallery-img-wrap {
   aspect-ratio: 5/7;
   overflow: hidden;
@@ -794,11 +735,6 @@ button {
   filter: brightness(0.9);
   transition: transform 0.6s var(--ease-out), filter 0.6s var(--ease-out);
   will-change: transform, filter;
-}
-
-.gallery-card:hover .gallery-img {
-  transform: scale(1.03);
-  filter: brightness(1);
 }
 
 .gallery-info {
@@ -831,10 +767,6 @@ button {
   transition: color 0.25s;
 }
 
-.gallery-card:hover .gallery-item-title {
-  color: var(--yellow);
-}
-
 .gallery-item-desc {
   font-size: 0.88rem;
   line-height: 1.45;
@@ -860,9 +792,6 @@ button {
   z-index: 2;
 }
 
-.gallery-card:hover .gallery-hint {
-  opacity: 1;
-}
 
 .hint-icon {
   font-size: 1.4rem;
@@ -878,7 +807,7 @@ button {
   font-weight: 500;
 }
 
-/* --- Sobre Mí --- */
+/* Sobre Mí */
 
 .about {
   border-top: 1px solid var(--gray-2);
@@ -973,7 +902,7 @@ button {
   background: var(--red);
 }
 
-/* --- Contacto --- */
+/* Contacto */
 
 .contact {
   border-top: 1px solid var(--gray-2);
@@ -1017,13 +946,8 @@ button {
   margin: auto;
 }
 
-.contact-email:hover {
-  color: var(--yellow);
-  border-color: var(--yellow);
-  gap: 1.75rem;
-}
 
-/* --- Footer --- */
+/* Footer */
 
 .footer {
   padding: 1.75rem clamp(1.5rem, 4vw, 3rem);
@@ -1042,7 +966,93 @@ button {
   color: var(--gray-3);
 }
 
-/* --- Tablet --- */
+/* --- 1. Elementos Táctiles/Botones (Solo Hover en Desktop) --- */
+@media (hover: hover) {
+  .nav-link:hover { color: var(--white); }
+  .nav-link:hover::after { width: 100%; }
+  .lang-btn:hover { color: var(--white); }
+  
+  .hero-cta:hover { background: #c8180e; }
+  .hero-cta:hover svg { transform: translateX(6px); }
+
+  .btn-close-case:hover { transform: translateY(-2px); color: var(--yellow); }
+  .contact-email:hover { color: var(--yellow); border-color: var(--yellow); gap: 1.75rem; }
+}
+
+/* --- 2. Tarjetas y Proyectos (Hover en Desktop + Scroll en Móvil) --- */
+
+/* Proyectos principales */
+.project-cover:hover,
+.project-cover.is-active {
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.project-cover:hover .project-number:not(.project-number--over),
+.project-cover.is-active .project-number:not(.project-number--over) {
+  -webkit-text-stroke: 1px var(--yellow);
+}
+
+.project-cover:hover .project-number--over,
+.project-cover.is-active .project-number--over {
+  -webkit-text-stroke: 1px var(--white);
+}
+
+.project-cover:hover .project-tags li,
+.project-cover.is-active .project-tags li {
+  border-color: rgba(248, 186, 18, 0.4);
+  color: var(--yellow);
+}
+
+.project-cover:hover .project-tags--over li,
+.project-cover.is-active .project-tags--over li {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.project-cover:hover .project-img,
+.project-cover.is-active .project-img {
+  transform: scale(1.01);
+  filter: brightness(1);
+}
+
+.project-cover:hover .bar-label,
+.project-cover.is-active .bar-label {
+  color: var(--yellow);
+}
+
+.project-cover:hover .project-img-overlay,
+.project-cover.is-active .project-img-overlay {
+  background: rgba(8, 8, 8, 0.35);
+}
+
+/* Galería secundaria */
+.gallery-card:hover,
+.gallery-card.is-active {
+  border-color: rgba(248, 186, 18, 0.4);
+  transform: translateY(-4px);
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.03);
+  filter: brightness(1);
+}
+
+.gallery-card.is-active .gallery-img {
+  transform: scale(1);
+  filter: brightness(1);
+}
+
+.gallery-card:hover .gallery-item-title,
+.gallery-card.is-active .gallery-item-title {
+  color: var(--yellow);
+}
+
+.gallery-card:hover .gallery-hint,
+.gallery-card.is-active .gallery-hint {
+  opacity: 1;
+}
+
+/* Tablet */
 
 @media (max-width: 1024px) {
   .hero {
@@ -1120,11 +1130,13 @@ button {
     color: var(--gray-4);
   }
 
-  .project-cover:hover .project-number.project-number--over {
+  .project-cover:hover .project-number.project-number--over,
+  .project-cover.is-active .project-number.project-number--over{
     -webkit-text-stroke: 1px var(--yellow);
   }
 
-  .project-cover:hover .project-tags.project-tags--over li {
+  .project-cover:hover .project-tags.project-tags--over li,
+  .project-cover.is-active .project-tags.project-tags--over li{
     border-color: rgba(248, 186, 18, 0.4);
     color: var(--yellow);
   }
@@ -1138,7 +1150,7 @@ button {
   }
 }
 
-/* --- Celular --- */
+/* Celular */
 
 @media (max-width: 767px) {
   :root {

@@ -260,5 +260,72 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("preferred_lang") || "es";
   if (savedLang !== "es") {
     setLanguage(savedLang);
+  };
+
+  /* --- 8. Rastreos e Interacciones de Google Analytics (GA4) --- */
+  const trackedSections = document.querySelectorAll("section[id]");
+  let currentSectionId = null;
+
+  const gaObserverOptions = {
+    root: null,
+    threshold: 0.30
+  };
+
+  const gaObserverCallback = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const sectionId = entry.target.id;
+
+        if (sectionId !== currentSectionId) {
+          currentSectionId = sectionId;
+
+          // Construir un nombre de sección descriptivo para GA4
+          const sectionTitle = sectionId.charAt(0).toUpperCase() + sectionId.slice(1);
+
+          if (typeof gtag === "function") {
+            gtag("event", "page_view", {
+              page_title: `Gabriel Nuila — ${sectionTitle}`,
+              page_location: `${window.location.origin}${window.location.pathname}#${sectionId}`,
+              page_path: `${window.location.pathname}#${sectionId}`
+            });
+          }
+        }
+      }
+    });
+  };
+
+  const gaObserver = new IntersectionObserver(gaObserverCallback, gaObserverOptions);
+  trackedSections.forEach((section) => gaObserver.observe(section));
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Solo se activa en dispositivos sin puntero/ratón preciso (celulares y tablets)
+  const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+
+  if (isTouchDevice) {
+    const elementsToObserve = document.querySelectorAll('.project-cover, .gallery-card');
+
+    const observerOptions = {
+      root: null,
+      // Franja reducida al 30% central de la pantalla (35% arriba y abajo ignorados)
+      rootMargin: '-35% 0px -35% 0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // 1. Limpia la clase .is-active de todas las tarjetas para evitar duplicados
+          elementsToObserve.forEach(el => el.classList.remove('is-active'));
+
+          // 2. Activa únicamente la tarjeta que está entrando al centro
+          entry.target.classList.add('is-active');
+        } else {
+          entry.target.classList.remove('is-active');
+        }
+      });
+    }, observerOptions);
+
+    elementsToObserve.forEach(el => observer.observe(el));
   }
 });
