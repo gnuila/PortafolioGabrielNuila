@@ -36,7 +36,8 @@ const translations = {
     p1: {
       title: "The Shower Bill",
       badge: "TISDC 2026 Finalist",
-      desc: "A poster addressing Earth's restoration, submitted to the 19th International Poster Biennial in Mexico and selected as a finalist in the Visual Design category of the 2026 Taiwan International Student Design Competition.",
+      badge2: "EPB 2026 Shortlisted",
+      desc: "A poster addressing Earth's restoration, submitted to the 19th International Poster Biennial in Mexico. It was later selected as a finalist in the Visual Design category of the 2026 Taiwan International Student Design Competition and shortlisted in the Student Category of the 2026 Ecuador Poster Biennial",
       tag1: "Poster Design",
       tag2: "Concept Development",
       tag3: "Visual Communication",
@@ -105,7 +106,8 @@ const translations = {
       sk5: "Problem Solving",
       sk6: "Time Management",
       awardsTitle: "Recognitions",
-      aw1: "Finalist — Taiwan International Student Design Competition 2026"
+      aw1: "Finalist — Taiwan International Student Design Competition 2026",
+      aw2: "Shortlisted - Ecuador Poster Biennial 2026"
     },
     contact: {
       title: `Let's work<br><span class="contact-red">together.</span>`
